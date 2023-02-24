@@ -1,20 +1,56 @@
-# TEMPLATE RN 2023
+# COMPONENTS - RN - 2023
 
-https://user-images.githubusercontent.com/22340454/215835922-73b9ded9-3ce3-4878-b121-ac2d8fd1fb8b.mp4
+Using my previous repository [template RN](https://github.com/Gualberto-Vannini/template_RN_2023) I am creating 2 components following a personal volunteer project about a Domestic Violence Reporting App:
+* [INPUT TEXT](#input-text)
+* [REUSABLE CARD](#reusable-card)
 
 
-This is a practical ready-to-go app skeleton 2023.
-The propose for this repository is:
-   - Fresh app skeleton
-   - Navigation Stack already available
-   - Customizable Theme wrapping the whole app
-   - Navigation Bottom Bar
-   - Redux sample
-   - Axios sample call
-   - ReduxToolKit sample
-   - Custom Fonts
-   - Style Components & Style System
-   - react-native-rename
+Video Sample             |  Error Message Sample
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/22340454/221224033-d4904d0a-80e6-4913-980c-938345fddac3.mp4)  |  ![](https://user-images.githubusercontent.com/22340454/221230144-e54ecf5d-41a5-409b-b6cc-34d76525f5e9.png)
+
+
+
+# INPUT TEXT
+
+[The component](https://github.com/Gualberto-Vannini/componentsRN/blob/main/src/components/InputText/index.tsx) is a reusable component in order to cover:
+- First Name
+- Last Name
+- Report
+- Password
+- About me
+- Therapist description
+
+Features:
+1. [Min and Max character](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/components/InputText/inputModel.ts#L8-L16)
+2. [Minimize props](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/screens/Home/index.tsx#L23-L25)  through dedicated [enum](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/components/InputText/inputModel.ts#L1-L6) 
+3. [Custom hook to fill datas](https://github.com/Gualberto-Vannini/componentsRN/blob/main/src/hooks/useInputText.ts)
+4. [Define text styles with styled-system and styled-components](https://github.com/Gualberto-Vannini/componentsRN/blob/main/src/components/TextInput/index.tsx)
+5. [Extend TextInputProps](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/components/InputText/index.tsx#L17)
+6. [Extend props](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/components/InputText/index.tsx#L25) to handle with hook the character lenght analysis
+7. [Having fun with typescript props](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/components/InputText/index.tsx#L46) using [pick propriety](https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys)
+8. [Strings for errors](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/translations/textInput/index.ts#L31-L33) handles already in the [component](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/components/InputText/index.tsx#L20)
+9. [Accepting new styles from parent](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/components/InputText/index.tsx#L18)
+10. [Error Accept](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/components/InputText/index.tsx#L20)
+11. [Theme](https://github.com/Gualberto-Vannini/componentsRN/tree/main/src/theme)
+
+**WIP:**
+- Api connection
+
+# REUSABLE CARD
+[The component](https://github.com/Gualberto-Vannini/componentsRN/blob/main/src/components/Card/index.tsx)
+1. 3 possibile card types [Therapist | Report | Appointment](https://github.com/Gualberto-Vannini/componentsRN/blob/8eeb7b14ebd16925fe33ecdd309c2901b4a87765/src/utils/helpers/cardModel.ts#L1-L4)
+2. Different [Tag Lines](https://github.com/Gualberto-Vannini/componentsRN/blob/main/src/components/TagLine/index.tsx), 
+3. [Icons](https://github.com/Gualberto-Vannini/componentsRN/tree/main/src/components/Card/icons) and text.
+4. [Collapsable text](https://github.com/Gualberto-Vannini/componentsRN/blob/main/src/components/CollapsableText/index.tsx)
+5. [Theme](https://github.com/Gualberto-Vannini/componentsRN/tree/main/src/theme)
+
+**WIP:**
+- Api connection
+- Abstract more the obj data to pass
+- Abstract more the possible card types
+
+
 
 ## Packages installed:
 
